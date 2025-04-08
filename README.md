@@ -13,20 +13,8 @@ This repository contains the source code, data processing scripts, notebooks, an
 │   ├── InitialBook.ipynb
 │   └── test.py
 ├── PaperText              # LaTeX source and compiled PDF of the publication
-│   ├── references.bib
-│   ├── TextBody.aux
-│   ├── TextBody.bbl
-│   ├── TextBody.blg
-│   ├── TextBody.fdb_latexmk
-│   ├── TextBody.fls
-│   ├── TextBody.log
-│   ├── TextBody.out
-│   ├── TextBody.pdf
-│   ├── TextBody.synctex.gz
-│   └── TextBody.tex
 ├── src                    # Main Python modules and scripts
 │   ├── DataProcessing     # Data ingestion, cleaning, and SSA/CCM analysis scripts
-│   │   └── some_file.py
 │   └── Plotting           # Visualization and plotting utilities
 ├── pyproject.toml         # Python project dependencies (Poetry)
 ├── poetry.lock            # Locked Python dependencies
@@ -39,16 +27,38 @@ This repository contains the source code, data processing scripts, notebooks, an
 
 This project uses **[Poetry](https://python-poetry.org/)** for dependency management.
 
-1. Install dependencies:
+git clone the repository: https://github.com/dmbrmv/HydrologicPhasePortrets
+
+```bash
+git clone https://github.com/dmbrmv/HydrologicPhasePortrets.git
+cd HydrologicPhasePortrets
+```
+
+### Prerequisites
+
+Install Poetry if you haven't already:
+
+```bash
+pip install poetry
+```
+
+Install the project dependencies:
 
 ```bash
 poetry install
 ```
 
-2. Activate the environment:
+or if you have Poetry installed, you can use the following command to install the dependencies:
 
 ```bash
-poetry shell
+poetry install --no-root
+```
+
+This will create a virtual environment and install all the required packages.
+Activate the virtual environment:
+
+```bash
+eval $(poetry env activate)
 ```
 
 ---
