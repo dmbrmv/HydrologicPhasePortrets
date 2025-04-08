@@ -1,0 +1,90 @@
+\documentclass[11pt,a4paper]{article}
+
+% Packages
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{graphicx}
+\usepackage{geometry}
+\geometry{left=2.5cm,right=2.5cm,top=2.5cm,bottom=2.5cm}
+\usepackage{natbib}
+\usepackage[colorlinks=true,linkcolor=blue,citecolor=blue]{hyperref}
+
+\title{Identification of Dynamically Similar Hydrological Systems Using Singular Spectrum Analysis and Convergent Cross Mapping}
+
+\author{[Your Name]$^{1,2}$ \\
+\small $^{1}$Institution, Address, Country\\
+\small $^{2}$Institution, Address, Country\\
+\small Email: \texttt{your.email@example.com}}
+
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+This study introduces an integrative approach combining Singular Spectrum Analysis (SSA) and Convergent Cross Mapping (CCM) to identify clusters of dynamically similar hydrological systems.
+We use the Lipschitz coefficient, derived from reconstructed state-space trajectories, as a key indicator to quantify the predictability and nonlinear interactions among hydrological variables.
+Our method offers a dynamic alternative to conventional classification schemes and can significantly enhance hydrological prediction and water resource management strategies. 
+\end{abstract}
+
+\section{Introduction}
+
+Understanding the dynamics and interactions of hydrological systems is critical for accurate water resource management, flood forecasting, and sustainable environmental planning \citep{montanari2013understanding, sivapalan2012sociohydrology}.
+Traditional hydrological classifications primarily rely on static catchment attributes such as land use, geology, and climatic averages, frequently neglecting nonlinear and dynamic characteristics inherent in catchment hydrology \citep{sawicz2011catchment, wagener2007catchment}.
+Recent advances highlight the need for methods that explicitly consider dynamic and nonlinear behaviors in catchment similarity analysis \citep{wang2021nonlinear, krakovska2019causality}. 
+
+Singular Spectrum Analysis (SSA) and Convergent Cross Mapping (CCM) offer robust approaches for the decomposition and analysis of complex hydrological time series.
+SSA isolates meaningful components such as trends, periodicities, and noise \citep{ghil2002advanced, elsner2009singular}.
+CCM reveals nonlinear causal interdependencies, facilitating the understanding of intricate hydrological relationships \citep{sugihara2012detecting, ye2015distinguishing}.
+However, integrated applications of SSA and CCM remain limited in hydrological research, particularly for dynamic classification tasks.
+
+In this paper, we propose combining SSA and CCM to cluster hydrological systems based on their dynamic similarity.
+A distinctive feature of our method is the use of the Lipschitz coefficient—a type of Lyapunov exponent—calculated from reconstructed state-space trajectories.
+This coefficient quantifies sensitivity to initial conditions and predictability, thus characterizing the intrinsic dynamics of hydrological catchments \citep{kantz2004nonlinear, wolf1985determining}.
+
+Our hypothesis is that catchments grouped by similar Lipschitz coefficients will exhibit comparable hydrological dynamics, providing improved insights for modeling, forecasting, and management decisions.
+
+\section{Materials and Methods}
+
+\subsection{Study Area and Data}
+- Description of hydrological catchments and available datasets.
+
+\subsection{Singular Spectrum Analysis (SSA)}
+- Theory and implementation details of SSA.
+
+\subsection{Convergent Cross Mapping (CCM)}
+- Theory and implementation details of CCM.
+
+\subsection{Lipschitz Coefficient}
+- Definition and calculation procedure.
+- Application to hydrological time series.
+
+\subsection{Clustering Procedure}
+- Methodology to cluster catchments based on Lipschitz coefficients.
+
+\section{Results}
+\subsection{SSA Decomposition Results}
+- Description and interpretation.
+
+\subsection{CCM Causal Interaction Results}
+- Visualization and analysis.
+
+\subsection{Dynamic Clustering of Hydrological Systems}
+- Clusters obtained, description, and interpretation.
+
+\section{Discussion}
+- Comparison with conventional hydrological classification methods.
+- Implications for hydrological modeling and forecasting.
+
+\section{Conclusions}
+- Key findings and contribution to hydrological science.
+- Recommendations for future research.
+
+\section*{Acknowledgments}
+- Funding, data provision, and collaboration acknowledgments.
+
+\bibliographystyle{apalike}
+\bibliography{references}
+
+\end{document}
